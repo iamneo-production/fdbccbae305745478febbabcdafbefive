@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace dotnetapp.Models
-
 {
     public class Booking
     {
@@ -13,5 +12,7 @@ namespace dotnetapp.Models
         public int SlotID { get; set; }
         public string UserID { get; set; }
 
+        [ForeignKey("SlotID")]
+        public Slot slots { get; set; }
     }
 }
