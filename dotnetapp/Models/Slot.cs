@@ -12,4 +12,4 @@ namespace dotnetapp.Models
         public double Duration { get; set; }
         public int Capacity { get; set; }
     }
-}
+} 
